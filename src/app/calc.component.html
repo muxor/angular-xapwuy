@@ -1,0 +1,44 @@
+
+<div style="float: left; margin: 0px 15px;"> 
+ 
+
+<input #it1 id="" value="" placeholder="Enter math here" /> <br /><br />
+
+<select #it2>
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="*">*</option>
+  <option value="/">/</option>
+</select>
+
+<br /><br />
+<input #it3 id="" value="" placeholder="Enter math here" />  <br /><br />
+
+<button (click)="shout(it1.value, it2.value,it3.value)"  >Calculate  <br />Result1</button>
+
+</div>
+
+<div style="float: left; margin: 0px 15px;"> 
+
+<b>Result1: </b>   {{plusNums}}
+
+<br /> <br />
+
+<b> Result2</b>  : Result1 * 3  = {{plusNums*3}}
+
+
+</div>
+
+<div style="float: left; margin: 0px 15px;"> 
+
+<b> Result2: </b>  {{plusNums*3}}
+
+<br /> <br />
+
+<b> Result3:</b> Result2 + 4  = {{(plusNums*3)+4}}
+
+
+</div>
+
+
+<!-- <p> {{it1.value}} </p> -->
